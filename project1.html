@@ -1,0 +1,130 @@
+<html class ="full-h">
+<head>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/my.js"></script>
+<script>
+  $(document).ready(function() {
+    $("button").addClass("animated bounce");
+    $(".well").addClass("animated shake");
+
+  });
+</script>
+</head>
+<style>
+.full-h{
+    min-height: 100%;
+    margin: 0;
+}
+.full-b{
+    min-height: 100%;
+    margin: 0;
+}
+.blue-text{
+color:blue;
+font-family:Lobster;
+font-size:30px;
+}
+.border{
+border-style:solid;
+border-color:orange;
+border-width:10px;
+border-style:solid;
+padding:5px 2px 5px 2px;
+}
+.back-col{
+background-color:black;
+}
+.max-width{
+width:1170px;
+}
+.margin{
+margin-bottom:50px;}
+/*.wrapper {
+    text-align: center;
+}*/
+
+.button {display: table;
+   margin: 0 auto;
+}
+body{
+background-image:url("http://smashingyolo.com/wp-content/uploads/2014/05/Best-Website-Background-Images12.jpg");
+background-color: transparent;
+}
+
+</style>
+<body class="full-b">
+<div class="container-fluid">
+<h1 class="blue-text text-center border">La-contestation</h1>
+<h2 class="text-center">Sign-Up</h2> 
+<form  class ="text-center margin" action="/.....">
+<label><Input type="text" name="Name" placeholder="Name"required></label><br>
+<label><Input type="date" name="dob" placeholder="Date of Birth"required></label><br>
+<label><input type="tel" name="contact no." placeholder="Mobile Number" pattern="[789][0-9]{9}" maxlength="12"  title="Ten digits code" required></label><br>
+<label><Input type="email" name="email" placeholder="Email-ID"required></label><br>
+<label><Input type="radio" name="gender"required>Male
+<Input type="radio" name="gender"required>Female
+<Input type="radio" name="gender"required>Others</label><br>
+<label><Input type="checkbox" name="Conditions"required>Policy</label><br>
+<img src="/..."
+id="captchaimg" >
+<label for="message">Enter the code</label>
+<input id="6_letters_code" name="6_letters_code" type="text">
+       <button class="button" type="submit" value="submit"><i class="glyphicon glyphicon-heart"></i>Submit</button>
+      <button class="button btn-danger" type="reset" value="reset"><i class="glyphicon glyphicon-off"></i>Reset</button>
+</form>
+</div>
+<h3 class="text-center">Sign-In</h3>
+
+<form action="/...">
+<div class="row">
+    <div class="col-xs-6">
+      <h4>Listen</h4>
+      <div class="well" id="center-well">
+         Username<input type="text" name="userid"/>
+            Password<input type="password" name="password"/>
+            <input type="button" onclick="check(this.form)" value="Login"/>
+            <input type="reset" value="Cancel"/>
+        </form>
+</div>
+</div>
+        <script language="javascript">
+            function check(form) 
+                if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd") {
+                    window.open('target.html')
+                }
+                else {
+                    alert("Error Password or Username")
+                }
+            }
+        </script>
+<div class="col-xs-6">
+      <h4>Share</h4>
+      <div class="well" id="right-well">
+         Username<input type="text" name="userid"/>
+            Password<input type="password" name="pswrd"/>
+            <input type="button" onclick="check(this.form)" value="Login"/>
+            <input type="reset" value="Cancel"/>
+        </form>
+</div>
+</div>
+        <script language="javascript">
+            function check(form) { 
+             if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd") {
+                    window.open('target.html')
+                }
+                else {
+                    alert("Error Password or Username")
+                }
+            }
+        </script>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
